@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: plum;
+  color: purple;
+  /* background-image: url('https://i.pinimg.com/564x/0e/07/80/0e0780cec5095b930a6e5043d683ec03.jpg');
+    background-repeat: no-repeat; */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#logo {
+  padding-left: 10%;
+  height: 70px
+}
+
+header {
+  background-color: purple;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+#about {
+  margin-top: 200px;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+#intro {
+  h2 {
+    width: 100%;
+    text-align: left;
+  }
+
+  flex-basis: 40%;
+  text-align: center;
+}
+
+#edu {
+  flex-basis: 40%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: 450px;
+}
+
+nav ul li {
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 10px;
+  background-color: plum;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+
+}
+
+.section {
+  padding: 40px 0;
+}
+
+
+.experience-circles {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.experience-circle {
+  width: 250px;
+  height: 200px;
+  background-color: #e27ed9;
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-image: cover;
+  background-repeat: none;
+  background-size: cover;
+
+  img {
+    width: 250px;
+    height: 200px;
+    border-radius: 500px;
+  }
+}
+
+
+.experience-details {
+  display: none;
+  margin-top: 20px;
+  border: 2px solid white;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 0 20px white;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  
+  
+}
+
+#github {
+  a {
+    color: purple;
+    margin-left: 10px;
+  }
+}
+
+
+.experience-details:hover{
+  /* transform: translateY(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+  background-color: purple;
+  color: white;
+
+}
+
+.fa-brands,
+.fa-solid {
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.activities {
+  display: flex;
+}
+
+.activity {
+  margin: 10px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(232, 223, 223, 0.1);
+  transition: transform 0.3s ease;
+  /* background-image: url('https://i.pinimg.com/564x/fd/db/b9/fddbb9744b45d9f28a0eca23236722fd.jpg');
+  background-size: cover; */
+}
+
+.activity:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: purple;
+  color: white;
+}
+
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  color: white;
+
+  >div {
+    cursor: pointer;
+    background-color: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      transition: transform 0.5s;
+    }
+
+    .layer {
+      width: 100%;
+      height: 0%;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), purple);
+      border-radius: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      p {
+        padding: 4%;
+      }
+
+      a {
+        font-size: 20px;
+        background-color: black;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        border-radius: 25px;
+        text-decoration: none;
+        color: plum;
+      }
+    }
+  }
+
+  >div:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .layer {
+      height: 100%;
+      transition: height 0.5s ease;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block; /* Show the hamburger menu on small screens */
+  }
+
+  nav ul.show {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    background-color: plum;
+    top: 60px; /* Adjust as needed based on your header height */
+  }
+}

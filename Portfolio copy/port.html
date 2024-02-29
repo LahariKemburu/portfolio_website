@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lahari Kemburu's Portfolio clone</title>
+  <link rel="stylesheet" href="port.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <header>
+    <nav>
+        <img id="logo" src="logo.png">
+        <!-- <h1 id="myname">Lahari Kemburu</h1> -->
+        <ul>
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#education">Education</a></li> -->
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#extracurricular">Extracurricular</a></li>
+          <li><a href="#github">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+   <div class="bar"></div>
+   <div class="bar"></div>
+   <div class="bar"></div>
+</div>
+
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <div id="intro">
+      <h2>About Me</h2>
+      <p>Dedicated Computer Science student with a strong foundation in C, C++, JavaScript, and backend technologies like Node.js, Express, and SQL. Eager to contribute my skills and knowledge to a software company. Seeking internship opportunities to gain real-world experience and apply my academic expertise.</p>
+    </div>
+    <div id="edu">
+      <h2>Education</h2>
+      <p>Bachelor of Engineering in Computer Science (Expected Graduation: 2026) <br>
+        SRM University, Andhra Pradesh <br>
+        Current CGPA: 9.68</p>
+      <p>Intermediate (Junior College) <br>
+        - School: Narayana Junior College, Vijayawada <br>
+        - Score: 974/1000</p>
+      <p>High School <br>
+        - School: Narayana, Vijayawada <br>
+        - GPA: 10.0</p>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Proficient in C, C++, Python, and JavaScript.</li>
+        <li>Strong problem-solving and analytical skills.</li>
+        <li>Knowledge of data structures and algorithms.</li>
+        <li>Familiarity with web development technologies (HTML, CSS, JS).</li>
+        <li>Backend development using Node.js and Express.</li>
+        <li>Proficient in React for building dynamic user interfaces.</li>
+        <li>Skilled in MongoDB, SQL for data storage in web apps.</li>
+        <li>Excellent communication and teamwork skills.</li>
+    </ul>
+    
+    </div>
+  </section>
+
+  <!-- <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <p>Web Development intern at CodeAlpha, contributing to MERN stack development. (1 month)</p>
+      <p>Web Development intern at CodSoft, specializing in MERN stack development. (1 month)</p>
+      <p>Co-Convener at SRM University's Smart Tech Club, leading students in AI/ML, IoT, Cybersecurity, and Blockchain projects for a smarter future. (6 months)</p>
+      <p>Associate Member at ProductKraft, Directorate of Innovation and Entrepreneurship, focusing on public speaking and leadership development. (6 months)</p>
+    </div>
+  </section> -->
+
+
+
+
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-circles">
+        <div style="background-image: url('https://media.licdn.com/dms/image/C4D0BAQFVBPbc6-yxoA/company-logo_200_200/0/1677167041761?e=1717027200&v=beta&t=XkamIEKavVQsj5J-LQcbPX-F7t4y5nMlhmxHO_ydEis');" class="experience-circle" onclick="showExperienceDetails(1)">
+    
+        </div>
+        <div style="background-image: url('https://www.estrade.in/wp-content/uploads/2019/02/SRM-Amaravati.jpg');" class="experience-circle" onclick="showExperienceDetails(2)">
+          
+        </div>
+        <div style=" background-image: url('https://i.pinimg.com/736x/ba/24/89/ba248911203d960a5dc30eac0256fc69.jpg');" class="experience-circle" onclick="showExperienceDetails(3)">
+        </div>
+        <div style=" background-image: url('https://static.wixstatic.com/media/ab228a_1ac7a2f724f7430aa758d5a3538e3499~mv2.jpg/v1/fill/w_1000,h_502,al_c,q_85,enc_auto/Product%20Kraft.jpg');" class="experience-circle" onclick="showExperienceDetails(4)">
+        </div>
+      </div>
+
+      <!-- Experience Details Cards -->
+      <div class="experience-details" id="experience-details-1">
+        <h3>Web Development Intern at CodeAlpha</h3>
+        <p>During my one-month Web Development Internship at Code Soft, I developed a sophisticated Scientific Calculator, designed and implemented a polished personal portfolio website, and created an efficient expense blogging website application, showcasing my practical skills and versatility in web development. This experience has fortified my ability to deliver effective solutions and elevated my proficiency in the field.</p>
+      </div>
+      <div class="experience-details" id="experience-details-2">
+        <h3>Co-Convener at SRM University's Smart Tech Club</h3>
+        <p>Led students in AI/ML, IoT, Cybersecurity, and Blockchain projects for a smarter future for 6 months.</p>
+        <ul>
+            <li>Showcase leadership: Highlight leading AI/ML, IoT, Cybersecurity, Blockchain projects in resume, online profiles. </li> 
+            <li>Quantify impact: If possible, measure project improvements (efficiency, cost savings) to demonstrate value.</li>
+            <li>Target strategically: Tailor resume/cover letter to desired roles, emphasizing relevant skills.</li>
+            <li>Stay updated: Show continuous learning through online courses, workshops, open-source contributions.</li>
+            <li>Network actively: Attend industry events, conferences to connect with professionals and explore opportunities.</li>
+        </ul>
+      </div>
+      <div class="experience-details"  id="experience-details-3">
+        <h3>Web Development Intern at CodeSoft</h3>
+        <p>During my one-month Web Development Internship at Code Soft, I developed a sophisticated Scientific Calculator, designed and implemented a polished personal portfolio website, and created an efficient expense blogging website application, showcasing my practical skills and versatility in web development. This experience has fortified my ability to deliver effective solutions and elevated my proficiency in the field.</p>
+      </div>
+      <div class="experience-details" id="experience-details-4">
+        <h3>Associate Member of ProductKraft</h3>
+        <p>During my tenure as an Associate Member at ProductKraft within the Directorate of Innovation and Entrepreneurship.In this role, I honed crucial skills in public speaking, leadership, team management, and communication. This experience significantly contributed to my professional growth and aptitude in various aspects of organizational development and innovation.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+  <h2>Projects</h2>
+  <div class="work-list">
+    <div class="work">
+      <img src="work-1.png" alt="">
+      <div class="layer">
+        <h3>E-Commerce Website</h3>
+        <p>Crafted a full-stack e-commerce website, leveraging comprehensive technologies and frameworks to deliver a seamless shopping experience.</p>
+        <!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
+      </div>
+    </div>
+    <div class="work">
+      <img src="work-2.png" alt="">
+      <div class="layer">
+        <h3>ChatGPT Integrator</h3>
+        <p>Engineered a ChatGPT integrator, seamlessly integrating OpenAI’s powerful language model into various applications to enhance conversational experiences and automate tasks.</p>
+        <!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
+      </div>
+    </div>
+    <div class="work">
+      <img src="work-3.png" alt="">
+      <div class="layer">
+        <h3>GAME</h3>
+        <p>Developed a game using HTML, CSS, JavaScript</p>
+        <!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
+      </div>
+    </div>
+    <div class="work">
+      <img src="work-1.png" alt="">
+      <div class="layer">
+        <h3>Expense Tracker</h3>
+        <p>Designed and implemented a personal Expense tracker . Utilized HTML, CSS ,JavaScript  create a responsive and user-friendly interface.</p>
+        <!-- <a href=""><i class="fa-brands fa-github"></i></a> -->
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </section>
+
+  <section id="extracurricular" class="section">
+    <div class="container">
+      <div class="card">
+        <h2>Extracurricular Activities</h2>
+        <div class="activities">
+          <div class="activity">
+            <p>Member of the SRM Coding Club, participating in coding competitions and hackathons.</p>
+          </div>
+          <div class="activity">
+            <p>Volunteer at the university's annual tech fest, assisting with event coordination and tech support.</p>
+          </div>
+          <div class="activity">
+            <p>Co-convener of the Smart Tech Club, actively involved in organizing tech-related workshops and events.</p>
+          </div>
+          <div class="activity">
+            <p>Serve as a guide in web development, assisting fellow students in learning and improving their web development skills.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="github" class="section">
+    <div class="container">
+      <h2>Contact Me!!!</h2>
+      <p><a href="https://github.com/LahariKemburu" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://github.com/LahariKemburu" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/lahari-kemburu-43273b24b" target="_blank"><i class="fa-brands fa-linkedin"></i></i></a>
+        <a href="https://github.com/LahariKemburu" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://github.com/LahariKemburu" target="_blank"><i class="fa-solid fa-phone"></i></a>
+      </p>
+    </div>
+  </section>
+
+  <script src="port.js"></script>
+</body>
+
+</html>
